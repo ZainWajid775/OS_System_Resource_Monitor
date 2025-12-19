@@ -104,7 +104,7 @@ struct resource_info {
 
 ## Documentation
 
-- [Project Report](CS_311_Project_Report.pdf)
+- [Project Report](./CS_311_Project_Report.pdf)
 
 ## Testing
 ```bash
