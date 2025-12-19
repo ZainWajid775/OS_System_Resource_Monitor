@@ -1,0 +1,32 @@
+# Compiled binaries
+*.o
+*.ko
+*.obj
+*.elf
+*.bin
+resmon
+resmon_debug
+
+# Kernel build files
+*.cmd
+.tmp_versions/
+Module.symvers
+modules.order
+
+# Log files
+*.log
+
+# Editor files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build directories
+build/
+dist/

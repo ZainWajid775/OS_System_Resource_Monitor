@@ -1,0 +1,9 @@
+--- a/include/linux/syscalls.h
++++ b/include/linux/syscalls.h
+@@ -1050,4 +1050,6 @@ asmlinkage long sys_set_mempolicy_home_node(unsigned long start, unsigned long
+                                             unsigned long home_node,
+                                             unsigned long flags);
+ 
++asmlinkage long sys_resmon(struct resource_info __user *info);
++
+ #endif

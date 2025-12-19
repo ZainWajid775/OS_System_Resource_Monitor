@@ -1,0 +1,10 @@
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -10,6 +10,7 @@
+ 
+ obj-y = fork.o exec_domain.o panic.o \
+         cpu.o exit.o softirq.o resource.o \
++        custom_syscalls/sys_resmon.o
+ 
+ obj-$(CONFIG_MODULES) += kmod.o
+ obj-$(CONFIG_MULTIUSER) += groups.o
