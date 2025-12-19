@@ -19,17 +19,6 @@ A custom Linux kernel system call (`sys_resmon`) that provides real-time system 
 - **Disk Space:** 20GB+ free
 - **RAM:** 4GB+ recommended
 
-## Project Structure.
-├── kernel-patches/       # Kernel modifications
-│   ├── sys_resmon.c     # System call implementation
-│   └── *.patch          # Patch files for kernel
-├── user-app/            # User-space applications
-│   ├── resmon.c         # Main monitoring application
-│   └── resmon_debug.c   # Debug/test version
-├── scripts/             # Installation scripts
-├── docs/                # Documentation
-└── README.md
-
 ## Quick Start
 
 ### 1. Install Prerequisites
@@ -90,28 +79,6 @@ resmon 10       # Update every 10 second
 # Stop monitoring
 Press Ctrl+C
 ```
-
-## Output Example
-
-╔════════════════════════════════════════════════════════╗
-║     SYSTEM RESOURCE MONITOR (resmon) - LIVE MODE       ║
-║     2024-12-14 10:30:15                               ║
-╚════════════════════════════════════════════════════════╝
-📊 MEMORY (RAM)
-Total:       4000740 KB  (3907 MB)
-Used:        1585404 KB  (1548 MB) [39.6%]
-Free:        2415336 KB  (2359 MB)
-[████████████████░░░░░░░░░░░░░░░░░░░░░░░░]
-💾 SWAP
-Total:       2097148 KB  (2048 MB)
-Used:              0 KB  (0 MB)
-Free:        2097148 KB  (2048 MB)
-⚙️  SYSTEM
-Processes: 597
-Uptime:    55 seconds (0.02 hours / 0.00 days)
-Load Avg:  1.04 (1min) | 1.05 (5min) | 0.98 (15min)
-📝 Logging to: /var/log/resmon.log or ./resmon.log
-⏸️  Press Ctrl+C to exit
 
 ## System Call Details
 
